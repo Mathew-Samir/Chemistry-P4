@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background:url(images/pexels-cottonbro.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.project-card{
+    min-height: 11em;
+    width: 22em;
+    overflow: hidden;
+    margin: 40px;
+    transition: 0.4s ease;
+    filter:  none;
+    ;
+}
+.project-card:hover{
+    transform: scale(1.1);
+    filter:  none
+}
+
+.project-card:hover .project-image{
+    filter: brightness(108%);
+}
+
+.project-image img{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
